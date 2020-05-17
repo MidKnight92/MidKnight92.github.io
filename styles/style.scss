@@ -1,0 +1,315 @@
+$ws : whitesmoke;
+$azul : #2079c7;
+$bgb : #140c00;
+$gris : gray;
+
+body {  
+    background-color: $bgb;
+    background-image: url("../images/cubes.png");
+    font-family: 'Open Sans', sans-serif;
+    color: $ws;
+    img {
+        border-radius: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15vw;
+        border: inset;
+        margin-bottom: 2%;
+    }
+    p {
+        text-align: center;
+        padding: 0 5%;
+    }
+    div{
+        margin: auto 2%;
+    
+        i {
+            color: $gris;
+        }
+    }
+    div{
+        text-align: center;
+        margin: auto auto;
+        h1 {
+            font-family: 'Merriweather Sans', sans-serif;
+            color: $ws;
+            font-weight: bolder;
+            font-size: 8vw;
+        }
+        h3 {
+            font-family: 'Monoton', cursive; 
+            color: $azul;
+            font-size: 6vw;
+        }
+    }
+
+    a {
+        color: $gris;
+        font-size: 5vw;
+    }
+    .center-screen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+    }
+    ul {
+        margin-top: 1.5%;
+    }
+    .bottom {
+        position: fixed;    
+        text-align: center;   
+        bottom: 0vh; 
+        width: 100%;
+        -webkit-text-stroke-width: .09px; 
+        -webkit-text-stroke-color: $azul; 
+    }
+    section {
+        padding: 2%;
+        p {
+            font-style: italic;
+        }
+        span {
+            color: $gris;
+        }
+    }
+    h4 {
+        color: $azul;
+        font-weight: bold;
+    }
+    form {
+        background-color: $bgb;
+        padding: 4%;
+        border: inset;
+        margin-bottom: 2.5%;
+        label{
+            color: gray;
+            padding: 4%;
+        }
+        .btn {
+            color: $ws;
+            background-color: $azul;
+        }
+        .btn:active {
+            background-color: $gris;
+        }
+    }
+
+    a:hover {
+        color: $azul;
+    }
+    
+    a:active{
+        color:$ws;
+        -webkit-text-stroke-width: .5px; 
+        -webkit-text-stroke-color: $azul; 
+    }
+    a i:hover {
+        color: $azul;
+    }
+    #name {
+        -webkit-text-stroke-width: .25px; 
+        -webkit-text-stroke-color: $gris; 
+    }
+}
+
+/* 
+    CSS Media Queries for Desktop, Tablet, Mobile.
+    By  gokulkrishh/media-query.css
+    https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
+*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    //CSS
+    main {
+        background-color: $bgb;
+        // padding: %;
+        border: inset;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 2%;
+        section {
+            padding: 2%;
+        }
+    }    
+    a i, #code, nav a {
+        font-size: 2vw;
+    }
+
+    // nav a {
+    //     font-size: 2vw;
+    // }
+    p {
+        font-size: 1.5vw;
+    }
+    .header{
+        font-weight: bolder;
+    }
+    h4 {
+        font-size: 2.5vw;
+        font-weight: bolder;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    //CSS
+    main {
+        background-color: $bgb;
+        // padding: %;
+        border: inset;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 2%;
+        section {
+            padding: 2%;
+        }
+    }    
+    a i , #code, nav a{
+        font-size: 2vw;
+    }
+
+    // nav a {
+    //     font-size: 2vw;
+    // }
+    p {
+        font-size: 1.5vw;
+    }
+    .header{
+        font-weight: bolder;
+    }
+    h4 {
+        font-size: 2.5vw;
+        font-weight: bolder;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    //CSS
+    main {
+        background-color: $bgb;
+        // padding: %;
+        border: inset;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 2%;
+        section {
+            padding: 2%;
+        }
+    }    
+    a i, nav a, #code {
+        font-size: 3vw;
+    }
+
+    // nav a {
+    //     font-size: 3vw;
+    // }
+    .header{
+        font-weight: bolder;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    //CSS
+    main {
+        background-color: $bgb;
+        // padding: %;
+        border: inset;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 2%;
+        section {
+            padding: 2%;
+        }
+    }
+    .header {
+        font-weight: bolder;
+    }    
+    a i, nav a, #code {
+        font-size: 3vw;
+    }
+
+    // nav a {
+    //     font-size: 3vw;
+    // }
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    //CSS
+    h5 {
+        font-size: 4.5vw;
+    }
+    h4 {
+        font-size: 4vw;
+    }
+    p, a i {
+        font-size: 3vw;
+    }
+    // a i {
+    //     font-size: 3vw;
+    // }
+    nav a, #code {
+        font-size: 2vw;
+    }
+    .bottom{
+        display: none;
+    }
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    //CSS
+    h5, h4 {
+        font-size: 5vw;
+    }
+    // h4 {
+    //     font-size: 5vw;
+    // }
+    p {
+        font-size: 4.5vw;
+    }
+    a {
+        font-size: 3vw;
+    }
+    .bottom{
+        display: none;
+    }
+  }

@@ -1,0 +1,276 @@
+body {
+  background-color: #140c00;
+  background-image: url("../images/cubes.png");
+  font-family: "Open Sans", sans-serif;
+  color: whitesmoke;
+}
+body img {
+  border-radius: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15vw;
+  border: inset;
+  margin-bottom: 2%;
+}
+body p {
+  text-align: center;
+  padding: 0 5%;
+}
+body div {
+  margin: auto 2%;
+}
+body div i {
+  color: gray;
+}
+body div {
+  text-align: center;
+  margin: auto auto;
+}
+body div h1 {
+  font-family: "Merriweather Sans", sans-serif;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 8vw;
+}
+body div h3 {
+  font-family: "Monoton", cursive;
+  color: #2079c7;
+  font-size: 6vw;
+}
+body a {
+  color: gray;
+  font-size: 5vw;
+}
+body .center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+body ul {
+  margin-top: 1.5%;
+}
+body .bottom {
+  position: fixed;
+  text-align: center;
+  bottom: 0vh;
+  width: 100%;
+  -webkit-text-stroke-width: 0.09px;
+  -webkit-text-stroke-color: #2079c7;
+}
+body section {
+  padding: 2%;
+}
+body section p {
+  font-style: italic;
+}
+body section span {
+  color: gray;
+}
+body h4 {
+  color: #2079c7;
+  font-weight: bold;
+}
+body form {
+  background-color: #140c00;
+  padding: 4%;
+  border: inset;
+  margin-bottom: 2.5%;
+}
+body form label {
+  color: gray;
+  padding: 4%;
+}
+body form .btn {
+  color: whitesmoke;
+  background-color: #2079c7;
+}
+body form .btn:active {
+  background-color: gray;
+}
+body a:hover {
+  color: #2079c7;
+}
+body a:active {
+  color: whitesmoke;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #2079c7;
+}
+body a i:hover {
+  color: #2079c7;
+}
+body #name {
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: gray;
+}
+
+/* 
+    CSS Media Queries for Desktop, Tablet, Mobile.
+    By  gokulkrishh/media-query.css
+    https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
+*/
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  main {
+    background-color: #140c00;
+    border: inset;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+  }
+  main section {
+    padding: 2%;
+  }
+
+  a i, #code, nav a {
+    font-size: 2vw;
+  }
+
+  p {
+    font-size: 1.5vw;
+  }
+
+  .header {
+    font-weight: bolder;
+  }
+
+  h4 {
+    font-size: 2.5vw;
+    font-weight: bolder;
+  }
+}
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  main {
+    background-color: #140c00;
+    border: inset;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+  }
+  main section {
+    padding: 2%;
+  }
+
+  a i, #code, nav a {
+    font-size: 2vw;
+  }
+
+  p {
+    font-size: 1.5vw;
+  }
+
+  .header {
+    font-weight: bolder;
+  }
+
+  h4 {
+    font-size: 2.5vw;
+    font-weight: bolder;
+  }
+}
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    background-color: #140c00;
+    border: inset;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+  }
+  main section {
+    padding: 2%;
+  }
+
+  a i, nav a, #code {
+    font-size: 3vw;
+  }
+
+  .header {
+    font-weight: bolder;
+  }
+}
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  main {
+    background-color: #140c00;
+    border: inset;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+  }
+  main section {
+    padding: 2%;
+  }
+
+  .header {
+    font-weight: bolder;
+  }
+
+  a i, nav a, #code {
+    font-size: 3vw;
+  }
+}
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  h5 {
+    font-size: 4.5vw;
+  }
+
+  h4 {
+    font-size: 4vw;
+  }
+
+  p, a i {
+    font-size: 3vw;
+  }
+
+  nav a, #code {
+    font-size: 2vw;
+  }
+
+  .bottom {
+    display: none;
+  }
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  h5, h4 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 4.5vw;
+  }
+
+  a {
+    font-size: 3vw;
+  }
+
+  .bottom {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
